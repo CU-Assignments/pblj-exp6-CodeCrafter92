@@ -27,7 +27,6 @@ public class StudentFilterSort {
                 new Student("Naddu", 78)
         );
 
-        // Filter students scoring above 75%, sort by marks, and display names
         students.stream()
                 .filter(student -> student.getMarks() > 75)
                 .sorted(Comparator.comparingDouble(Student::getMarks).reversed())
